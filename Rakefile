@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailJumper4::Application.load_tasks
+ChangeMe::Application.load_tasks

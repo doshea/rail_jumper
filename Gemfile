@@ -13,7 +13,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
-#Moved out of development-only so that Heroku can use it
+# Foundation Icons
+gem 'foundation-icons-sass-rails'
+
+# Moved out of development-only so that Heroku can use it
 gem 'pry-rails'
 
 gem 'turbolinks'
