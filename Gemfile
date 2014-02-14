@@ -1,27 +1,21 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ruby '2.0.0'
 gem 'rails', '4.0.2'
 
-# Use postgresql as the database for Active Record
 gem 'pg'
+gem 'haml'
+gem 'bcrypt-ruby'
 
-# Use SCSS for stylesheets
+# asset gems
 gem 'sass-rails', '~> 4.0.0'
-
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+#Moved out of development-only so that Heroku can use it
+gem 'pry-rails'
+
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -32,14 +26,34 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+group :development, :test do
+  gem 'annotate'
+  gem 'quiet_assets'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
+group :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'database_cleaner'
+  gem 'guard-rspec'
+  gem 'faker'
+end
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
+group :development do
+  #causes problem in conjunction with rspec test
+  gem 'better_errors' #do not put this in production or everyone will be able to mess around with variables
+end
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+group :production do
+  gem 'rails_12factor'
+end
+
+group :production, :development do
+    gem 'pry-debugger'
+    gem 'pry-stack_explorer'
+end
