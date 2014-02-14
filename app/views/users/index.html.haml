@@ -1,0 +1,21 @@
+%table
+  %thead
+    %tr
+      %th ID
+      %th Username
+      %th First
+      %th Last
+      %th Email
+      %th is_admin
+  %tbody
+    - @users.each do |user|
+      %tr
+        %th= user.id
+        %th= user.username
+        %th= user.first_name
+        %th= user.last_name
+        %th= user.email
+        %th= user.is_admin
+
+:javascript
+  $('table').dataTable();
