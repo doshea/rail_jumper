@@ -79,6 +79,9 @@ GEM
       i18n (~> 0.5)
     ffi (1.9.3)
     formatador (0.2.4)
+    foundation-icons-sass-rails (3.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     guard (2.4.0)
       formatador (>= 0.2.4)
       listen (~> 2.1)
@@ -124,6 +127,8 @@ GEM
       mini_portile (~> 0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
+    protected_attributes (1.0.5)
+      activemodel (>= 4.0.1, < 5.0)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -233,6 +238,7 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   faker
+  foundation-icons-sass-rails
   guard-rspec
   haml
   jbuilder (~> 1.2)
@@ -240,6 +246,7 @@ DEPENDENCIES
   launchy
   meta_request
   pg
+  protected_attributes
   pry-debugger
   pry-rails
   pry-stack_explorer
