@@ -1,7 +1,7 @@
 RailJumper4::Application.routes.draw do
   root to: 'pages#index'
 
-  resources :users, except: [:show, :index]
+  resources :users, only: [:new, :create]
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'

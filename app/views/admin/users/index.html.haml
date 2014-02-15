@@ -8,17 +8,18 @@
       %th Last
       %th Email
       %th Admin
+      %th
   %tbody
     - @users.each do |user|
       %tr
-        %th= user.id
-        %th= user.username
-        %th= user.first_name
-        %th= user.last_name
-        %th= user.email
-        %th
+        %td= user.id
+        %td= link_to user.username, edit_admin_user_path(user)
+        %td= user.first_name
+        %td= user.last_name
+        %td= user.email
+        %td
           - if user.is_admin?
             %i.fi-check
-
-:javascript
-  $('table').dataTable();
+        %td
+          = link_to admin_user_path(user), method: :delete, data: {confirm: "Are you sure you want to delete #{user.username}?"} do
+            %i.fi-trash
