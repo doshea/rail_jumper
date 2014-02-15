@@ -1,10 +1,6 @@
 class UsersController < ApplicationController
   before_filter :ensure_admin, only: [:index, :edit, :update, :destroy]
 
-  def index
-    @users = User.order(:created_at)
-  end
-
   def new
     @user = User.new
   end
