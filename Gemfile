@@ -19,8 +19,6 @@ gem 'jquery-rails'
 # Foundation Icons
 gem 'foundation-icons-sass-rails'
 
-# gem 'protected_attributes' # TODO: Fix things to properly use Rails 4. UPGRADE THIS PLEASE.
-
 # Moved out of development-only so that Heroku can use it
 gem 'pry-rails'
 

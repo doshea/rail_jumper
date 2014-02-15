@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessible :auth_token, :email, :first_name, :image, :is_admin, :last_name, :password, :password_confirmation, :username
-
   has_secure_password
+  
   before_create { generate_token(:auth_token) }
 
   MIN_PASSWORD_LENGTH = 5
