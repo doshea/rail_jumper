@@ -3,12 +3,11 @@
 Setting up Rails apps can get tedious -- repeating the same steps and downloading the same packages. This pre-packaged repository aims to reduce setup time and aid in getting off the ground quickly.
 
 ### Features
-  * Preliminary User model
-  * Account and Password page
-  * Session-based Log In, Log Out, Remember Me
-  * Site Administration
+  * User model
+  * Session-based log in
+  * Site admin
   * Simple navbar
-  * Foundation 5-ready project
+  * Foundation 5-ready
 
 ### Setup
 1. Clone the repo down: <tt>git clone https://github.com/doshea/rail_jumper.git</tt>
