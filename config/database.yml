@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: change_me_development
+  database: rail_jumper_4_development
   host: localhost
   pool: 5
   username: dylanoshea
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: change_me_test
+  database: rail_jumper_4_test
   host: localhost
   pool: 5
   username: dylanoshea
@@ -19,7 +19,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: change_me_production
+  database: rail_jumper_4_production
   host: localhost
   pool: 5
   username: dylanoshea

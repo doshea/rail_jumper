@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ChangeMe::Application.config.secret_key_base = '42666fc91b594cf169d4e7b4d9d446f51bec3e9bc39452fcdab05e1eec000ffc0466bf9df12d5f3e8963c81780c26933c8cdc64bf407693f00aed5db06df10ba'
+RailJumper4::Application.config.secret_key_base = '42666fc91b594cf169d4e7b4d9d446f51bec3e9bc39452fcdab05e1eec000ffc0466bf9df12d5f3e8963c81780c26933c8cdc64bf407693f00aed5db06df10ba'

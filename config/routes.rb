@@ -1,4 +1,4 @@
-ChangeMe::Application.routes.draw do
+RailJumper4::Application.routes.draw do
   root to: 'pages#index'
 
   resources :users, except: [:show]

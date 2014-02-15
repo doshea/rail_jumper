@@ -12,4 +12,4 @@
 // graph.min
 //= require jquery-ui-1.10.2.custom.min
 // require dataTables/jquery.dataTables
-//= require change_me
+//= require rail_jumper_4

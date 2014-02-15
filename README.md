@@ -10,11 +10,11 @@ Setting up Rails apps can get tedious -- repeating the same steps and downloadin
 
   | Placeholder         |          |           Replacement         |
   | :------------: |:-----:|:--------------------:|
-  | change_me         |   --> |        your_app_name       |
-  | ChangeMe          |   --> |         YourAppName        |
+  | rail_jumper_4         |   --> |        your_app_name       |
+  | RailJumper4          |   --> |         YourAppName        |
   | your_name_here |   --> | your_postgres_username |
 
-5. Rename change_me.js and .css.scss to your_app_name.js and .css.scss
+5. Rename rail_jumper_4.js and .css.scss to your_app_name.js and .css.scss
 6. Create the database: <tt>rake db:create</tt>
 7. Party down!
 
