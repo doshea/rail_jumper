@@ -15,9 +15,8 @@ Setting up Rails apps can get tedious -- repeating the same steps and downloadin
   | your_name_here |   --> | your_postgres_username |
 
 5. Rename rail_jumper_4.js and .css.scss to your_app_name.js and .css.scss
-6. Create the database: <tt>rake db:create</tt>
-7. Migrate the database: <tt>rake db:migrate</tt>
-8. Party down!
+6. Create and migrate the database: <tt>rake db:create db:migrate</tt>
+7. Party down!
 
 ### Frameworks/Libraries
 RailJumper comes bundled with a number of libraries/frameworks to minimize the time you spend downloading and setting up.
