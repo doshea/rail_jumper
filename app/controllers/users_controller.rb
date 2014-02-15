@@ -10,9 +10,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:user])
+    @user = User.new(signup_params)
     if @user.save
-      session[:user_id] = user.id unless session[:user_id]
+      session[:user_id] = @user.id unless session[:user_id]
       redirect_to root_path
     else
       render :new
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
   def update
     user = User.find(params[:id])
-    if user.update_attributes(params[:user])
+    if user.update_attributes(profile_params)
       redirect_to root_path
     else
       render :edit
@@ -37,4 +37,18 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+
+  private ###
+
+  def signup_params
+    params.require(:user).permit(:email, :password, :password_confirmation, :username)
+  end
+
+  def password_params
+    params.require(:user).permit(:password, :password_confirmation)
+  end
+
+  def profile_params
+    params.require(:user).permit(:first_name, :last_name, :image)
+  end
 end

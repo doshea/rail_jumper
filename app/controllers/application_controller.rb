@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def ensure_logged_in
-    render text: 'Account Required' if @current_user.nil?
+    render text: 'Account Required' unless is_logged_in?
   end
   def ensure_admin
     render text: 'Not Authorized' if (@current_user.nil? || !@current_user.is_admin)
