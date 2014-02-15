@@ -4,7 +4,7 @@ Setting up Rails apps can get tedious -- repeating the same steps and downloadin
 
 ### Features
   * User model
-  * Session-based log in
+  * Session-based log-in
   * Site admin
   * Simple navbar
   * Foundation 5-ready
