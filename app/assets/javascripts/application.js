@@ -1,8 +1,8 @@
 //= require foundation5/jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require foundation5/foundation.min
-//= require foundation5/modernizr
+// require foundation5/foundation.min
+// require foundation5/modernizr
 //
 // require underscore.min
 // require sugar.min

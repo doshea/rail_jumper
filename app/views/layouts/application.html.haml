@@ -7,6 +7,8 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
+    = javascript_include_tag 'foundation5/foundation.min'
+    = javascript_include_tag 'foundation5/modernizr'
     %header
     = render partial: 'layouts/nav'
     .row
