@@ -15,8 +15,7 @@
     %ul.right
       %li.divider
       - if @current_user
-        %li
-          %a= @current_user.username
+        %li= link_to @current_user.username, account_path
         %li.divider
         %li= link_to('Log out', login_path, method: :delete)
       - else
