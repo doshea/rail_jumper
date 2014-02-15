@@ -1,4 +1,4 @@
-RailJumper4::Application.routes.draw do
+RailJumper::Application.routes.draw do
   root to: 'pages#index'
 
   get '/login' => 'sessions#new'

@@ -15,4 +15,4 @@
 // require chart.min
 // require dataTables/jquery.dataTables
 //
-//= require rail_jumper_4
+//= require rail_jumper
