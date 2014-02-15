@@ -16,22 +16,25 @@ Setting up Rails apps can get tedious -- repeating the same steps and downloadin
 
 5. Rename rail_jumper_4.js and .css.scss to your_app_name.js and .css.scss
 6. Create the database: <tt>rake db:create</tt>
-7. Party down!
+7. Migrate the database: <tt>rake db:migrate</tt>
+8. Party down!
 
 ### Frameworks/Libraries
 RailJumper comes bundled with a number of libraries/frameworks to minimize the time you spend downloading and setting up.
 
 #### HTML/CSS/JS Framework
-  * Foundation 4
+  * [Foundation 5](http://foundation.zurb.com/docs/)
+  * [Foundation Icons 3](http://zurb.com/playground/foundation-icon-fonts-3)
 
-#### Javascript Libraries
-  * Underscore.js
-  * Moment.js
-  * Morris.js
-  * Sugar.min.js
-  * jQuery UI
-  * d3
-  * graph.js (disabled)
+#### Javascript Libraries (DISABLED by default)
+  * [Underscore.js](http://underscorejs.org/)
+  * [Sugar.js](http://sugarjs.com/)
+  * [Moment.js](http://momentjs.com/)
+  * [Morris.js](http://momentjs.com/)
+  * [jQuery UI](https://jqueryui.com/)
+  * [d3](http://d3js.org/)
+  * [Chart.js](http://www.chartjs.org/)
+  * [DataTables](https://datatables.net/)
 
 =====
 This README written in [Github Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
