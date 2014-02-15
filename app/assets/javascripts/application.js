@@ -1,8 +1,8 @@
-//= require jquery
+//= require foundation5/jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require foundation
-//= require vendor/custom.modernizr
+//= require foundation5/foundation.min
+//= require foundation5/modernizr
 //= require underscore.min
 //= require sugar.min
 //= require moment.min
@@ -11,5 +11,5 @@
 //= require morris/morris.min
 // graph.min
 //= require jquery-ui-1.10.2.custom.min
-//= require dataTables/jquery.dataTables
+// require dataTables/jquery.dataTables
 //= require change_me
