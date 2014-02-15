@@ -1,0 +1,26 @@
+%nav.top-bar{data: {topbar: true, options: 'is_hover: false'}}
+  %ul.title-area
+    %li.name
+      %h1
+        = link_to 'Home', root_path
+  %section.top-bar-section
+    -# Left Nav Section
+    %ul.left
+      - if is_admin?
+        %li.divider
+        %li
+          = link_to 'Admin', admin_path
+      %li.divider
+    -# Right Nav Section
+    %ul.right
+      %li.divider
+      - if @current_user
+        %li
+          %a= @current_user.username
+        %li.divider
+        %li= link_to('Log out', login_path, method: :delete)
+      - else
+        %li= link_to('Log in', login_path)
+        %li.divider
+        %li= link_to('Register', new_user_path)
+      %li.divider
