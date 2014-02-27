@@ -15,11 +15,26 @@
     %ul.right
       %li.divider
       - if @current_user
-        %li= link_to @current_user.username, account_path
-        %li.divider
-        %li= link_to('Log out', login_path, method: :delete)
+        %li.has-dropdown
+          = link_to '#' do
+            = @current_user.username
+          %ul.dropdown
+            %li
+              = link_to account_path do
+                %i.fi-torso
+                Account
+            %li
+              = link_to login_path, method: :delete do
+                %i.fi-power
+                Log out
       - else
-        %li= link_to('Log in', login_path)
+        %li
+          = link_to new_user_path do
+            %i.fi-pencil
+            Register
         %li.divider
-        %li= link_to('Register', new_user_path)
+        %li
+          = link_to login_path do
+            %i.fi-power
+            Log in
       %li.divider
