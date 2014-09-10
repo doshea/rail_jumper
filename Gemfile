@@ -53,6 +53,7 @@ end
 group :development do
   #causes problem in conjunction with rspec test
   gem 'better_errors' #do not put this in production or everyone will be able to mess around with variables
+  gem 'spring'
 end
 
 group :production do
