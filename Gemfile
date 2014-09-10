@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
-gem 'rails', '4.0.2'
+ruby '2.1.1'
+gem 'rails', '4.1.5'
 
 gem 'pg'
 gem 'haml'
 gem 'bcrypt-ruby'
 
 # asset gems
-gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 
 # Datatables is disables by default. To enable, uncomment this gem and its related js and css lines in application.js and .css
