@@ -16,9 +16,6 @@ gem 'jquery-rails'
 # Datatables is disables by default. To enable, uncomment this gem and its related js and css lines in application.js and .css
 # gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 
-# Foundation Icons
-gem 'foundation-icons-sass-rails'
-
 # Moved out of development-only so that Heroku can use it
 gem 'pry-rails'
 
