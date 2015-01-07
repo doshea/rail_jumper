@@ -1,9 +1,5 @@
 class UsersController < ApplicationController
 
-  def new
-    @user = User.new
-  end
-
   def create
     @user = User.new(signup_params)
     if @user.save
@@ -12,6 +8,11 @@ class UsersController < ApplicationController
     else
       render :new
     end
+  end
+
+  def forgot_password
+    @user = @current_user
+    @redirect = params[:redirect]
   end
 
 

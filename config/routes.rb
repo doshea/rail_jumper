@@ -5,7 +5,7 @@ RailJumper::Application.routes.draw do
   post '/login' => 'sessions#create'
   delete '/login' => 'sessions#destroy'
 
-  resources :users, only: [:new, :create]
+  resources :users, only: :create
   
   namespace :account do
     get '/', to: :show

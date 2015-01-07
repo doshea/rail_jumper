@@ -1,12 +1,37 @@
-%h1 Log In
-.large-3.columns
+.small-10.columns.small-offset-1.end
+  %p.alert-box.text-center.secondary{data: {alert: true}}
+    %a.close{href:'#'} &times;
+    %b FYI
+    \: You're fantastic.
+
+
+.small-4.columns.small-offset-1.medium-3.medium-offset-2.text-center
+  %h2 Log In
+  %hr
   = form_tag '/login' do
     = label_tag :username
     = text_field_tag :username, nil, :autofocus => true
     = label_tag :password
     = password_field_tag :password
-    = label_tag :remember_me
-    = check_box_tag :remember_me, 1, params[:remember_me]
+    .row
+      .small-1.columns.small-offset-1
+        = check_box_tag :remember_me, 1, params[:remember_me]
+      .small-10.columns
+        = label_tag :remember_me, 'Remember me on this computer'
     %br
-    = submit_tag 'Log In', :class => 'button tiny radius success'
-.large-9.columns
+    = submit_tag 'Log In', :class => 'button radius small'
+.small-2.columns.centered
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  #beezy.button.secondary or
+.small-4.columns.medium-3.end.text-center
+  %h2.text-center Register
+  %hr
+  = render partial: 'users/partials/form'

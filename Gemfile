@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
-gem 'rails', '4.1.5'
+ruby '2.2.0'
+gem 'rails'
 
 gem 'pg'
 gem 'haml'
@@ -12,6 +12,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
+gem 'foundation-rails'
 
 # Datatables is disables by default. To enable, uncomment this gem and its related js and css lines in application.js and .css
 # gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
@@ -28,6 +29,9 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+#Slighty Fuzzy search. Probably needs to be replaced with Solr.
+gem 'pg_search'
 
 group :development, :test do
   gem 'annotate'
@@ -58,6 +62,6 @@ group :production do
 end
 
 group :production, :development do
-    gem 'pry-debugger'
+    gem 'pry-byebug'
     gem 'pry-stack_explorer'
 end

@@ -1,0 +1,23 @@
+= form_for @current_user, url: url_for(controller: :account, action: :update) do |f|
+  = token_tag nil
+  -# %fieldset
+  -#   %legend Profile Picture
+  -#   .row
+  -#     .large-5.columns
+  -#       = image_tag @current_user.image, class: 'profile-pic-updateable'
+  -#     .large-7.columns
+  -#       %p
+  -#         Upload an image from your computer:
+  -#       = f.file_field :image
+  -#       %p
+  -#         OR
+  -#       %p
+  -#         paste an image URL:
+  -#       = url_field_tag 'user[remote_image_url]', nil, placeholder: 'Ex. www.panda-pics.com/panda.pg'
+  %fieldset
+    %legend Personal Info
+    = f.label :first_name
+    = f.text_field :first_name, placeholder: 'Dubs', maxlength: User::MAX_FIRST_NAME_LENGTH
+    = f.label :last_name
+    = f.text_field :last_name, placeholder: "O'Husky", maxlength: User::MAX_LAST_NAME_LENGTH
+    = f.submit 'Update Account', class: 'button'

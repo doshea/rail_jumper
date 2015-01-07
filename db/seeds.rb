@@ -7,6 +7,7 @@ User.create(
   email: 'test@gmail.com',
   username: 'test_user',
   is_admin: false,
+  verified: true,
   password: 'qwerty',
   password_confirmation: 'qwerty'
 )
@@ -18,6 +19,7 @@ User.create(
   email: 'chief@gmail.com',
   username: 'chief',
   is_admin: true,
+  verified: true,
   password: 'qwerty',
   password_confirmation: 'qwerty'
 )

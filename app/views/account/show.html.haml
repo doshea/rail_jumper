@@ -1,3 +1,19 @@
-%h1 Account
-= render partial: 'account_form'
-= render partial: 'password_form'
+%h1 Account Settings
+= render partial: 'layouts/errors', locals: {error_object: @current_user}
+%dl.tabs.vertical{"data-tab" => ""}
+  %dd.active
+    = link_to '#panel1' do
+      Personal
+  %dd
+    = link_to '#panel2' do
+      Emails
+  %dd
+    = link_to '#panel3' do
+      Password
+.tabs-content.vertical
+  #panel1.content.active
+    = render partial: 'personal'
+  #panel2.content
+    = render partial: 'emails'
+  #panel3.content
+    = render partial: 'password'
