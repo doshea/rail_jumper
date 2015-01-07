@@ -12,4 +12,4 @@
 // require chart.min
 // require dataTables/jquery.dataTables
 //= require rail_jumper
-$(document).foundation();
+$(function(){ $(document).foundation(); });
