@@ -11,10 +11,8 @@ class SessionsController < ApplicationController
       else
         cookies[:auth_token] = user.auth_token
       end
-      redirect_to root_path
-    else
-      redirect_to welcome_path
     end
+    redirect_to root_path
   end
 
   def destroy
